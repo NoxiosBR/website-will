@@ -55,13 +55,13 @@ long_title = "Willian Nunes"
 favicon = "/assets/images/profile.jpg"
 
 [extra.footer]
-source_code = "https://github.com/diogotcorreia/dtc-website"
+source_code = "https://github.com/NoxiosBR/dtc-website-will"
 
 [[extra.footer.socials]]
 name = "mail"
-label = "Email"
+label = "E-mail"
 value = "willian.silva166@hotmail.com"
-link = "mailto:me@diogotc.com"
+link = "willian.silva166@hotmail.com"
 [[extra.footer.socials]]
 name = "discord"
 label = "Discord"
