@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://willians.com"
+base_url = "https://willnunes.com"
 
 # The site title and description; used in feeds by default.
 title = "Willian Nunes"
@@ -51,7 +51,7 @@ smart_punctuation = true
 theme = "github-dark"
 
 [extra]
-long_title = "Diogo Torres Correia"
+long_title = "Willian Nunes"
 favicon = "/assets/images/profile.jpg"
 
 [extra.footer]
@@ -60,35 +60,23 @@ source_code = "https://github.com/diogotcorreia/dtc-website"
 [[extra.footer.socials]]
 name = "mail"
 label = "Email"
-value = "me@diogotc.com"
+value = "willian.silva166@hotmail.com"
 link = "mailto:me@diogotc.com"
 [[extra.footer.socials]]
 name = "discord"
 label = "Discord"
-value = "diogocorreia"
-link = "https://discord.com/users/218721510649626635"
+value = "Pingu"
+link = "https://discord.com/users/306201052288647169"
 [[extra.footer.socials]]
-name = "matrix"
-label = "Matrix"
-value = "@dtc:diogotc.com"
-link = "https://matrix.to/#/@dtc:diogotc.com"
-[[extra.footer.socials]]
-name = "mastodon"
-label = "Mastodon"
-value = "@dtc@masto.pt"
-link = "https://masto.pt/@dtc"
-[[extra.footer.socials]]
-name = "gpg"
-label = "GPG Key"
-value = "0x12CF31FDFF172B77"
-link = "https://gpg.diogotc.com"
+name = "instagram"
+label = "Instagram"
+value = "will_idm"
+link = "https://www.instagram.com/will_idm/?hl=pt-br"
+
 
 [[extra.links]]
 name = "Home"
 path = "/"
-[[extra.links]]
-name = "Blog"
-path = "/blog"
 [[extra.links]]
 name = "Impossible List"
 path = "/impossiblelist"
@@ -96,5 +84,5 @@ path = "/impossiblelist"
 name = "CV"
 path = "https://cv.diogotc.com"
 
-[extra.authors."Diogo Correia"]
-fediverse = "@dtc@masto.pt"
+[extra.authors."Willian Nunes"]
+fediverse = ""

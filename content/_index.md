@@ -1,14 +1,16 @@
 +++
 [extra]
 profile_picture = "/assets/images/profile.jpg"
-name = "Diogo Correia"
-subtitle = "Student, Developer & Runner"
+name = "Willian Nunes"
+subtitle = "Software Enginner and Player"
 about_me = """
 **Hey!**
+ 
+I'm Willian and I live in Brazil!
 
-I'm Diogo Torres Correia from Portugal!  
-I love programming, as well as running, taking photos and learning new things!  
-Feel free to get in touch or take a look at my past work below.
+I love playing video games and watching movies (my favorite is The Lord of the Rings), and I'm quite curious, hehe.
+
+Feel free to get in touch or check out my work and projects.
 """
 ###########
 # SOCIALS #
@@ -17,105 +19,58 @@ Feel free to get in touch or take a look at my past work below.
 [[extra.socials]]
 name = "github"
 icon = "/assets/icons/github.svg"
-label = "diogotcorreia"
-link = "https://github.com/diogotcorreia"
-[[extra.socials]]
-name = "mastodon"
-icon = "/assets/icons/mastodon.svg"
-label = "@dtc@masto.pt"
-link = "https://masto.pt/@dtc"
+label = "NoxiosBR"
+link = "https://github.com/NoxiosBR"
 [[extra.socials]]
 name = "discord"
 icon = "/assets/icons/discord.svg"
-label = "diogocorreia"
-link = "https://discord.com/users/218721510649626635"
-[[extra.socials]]
-name = "matrix"
-icon = "/assets/icons/matrix.svg"
-label = "@dtc:diogotc.com"
-link = "https://matrix.to/#/@dtc:diogotc.com"
+label = "Pingu"
+link = "https://discord.com/users/306201052288647169"
 [[extra.socials]]
 name = "strava"
 icon = "/assets/icons/strava.svg"
-label = "Diogo Correia"
-link = "https://www.strava.com/athletes/22762930"
+label = "Willian Nunes"
+link = "https://www.strava.com/athletes/83086974"
 [[extra.socials]]
 name = "steam"
 icon = "/assets/icons/steam.svg"
-label = "rexcantor64"
-link = "https://steamcommunity.com/id/rexcantor64"
+label = "williansilva166"
+link = "https://steamcommunity.com/profiles/76561198317806111/"
 [[extra.socials]]
 name = "instagram"
 icon = "/assets/icons/instagram.svg"
-label = "@diogotc2002"
-link = "https://www.instagram.com/diogotc2002/"
-[[extra.socials]]
-name = "mail"
-icon = "/assets/icons/mail.svg"
-label = "me@diogotc.com"
-link = "mailto:me@diogotc.com"
-[[extra.socials]]
-name = "mail"
-icon = "/assets/icons/gpg.svg"
-label = "GPG Key"
-link = "https://gpg.diogotc.com"
+label = "@will_idm"
+link = "https://www.instagram.com/will_idm/?hl=pt-br"
 
 ################
 # TOP PROJECTS #
 ################
 
 [[extra.top_projects]]
-name = "Triton"
-icon = "/assets/images/triton.png"
-link = "https://triton.rexcantor64.com"
-calltoaction = "Visit Website"
-background = "#0a74db"
+name = "Artemis"
+icon = "/assets/images/powerapps.png"
+link = ""
+calltoaction = ""
+background = "#9945a9"
 color = "#fff"
 description = """
-Triton is a Spigot plugin for Minecraft that enables a Minecraft server to send
-messages in the player's language.  
-This was my first premium plugin on Spigot and I've put a lot of work and effort into it!
+Development of the internal Artemis platform, designed to record and manage incidents related to Food Safety and Food Defense. The solution centralizes critical information, standardizes incident records, and supports food quality and protection initiatives.
+
+Additionally, the system automates report generation and email distribution to stakeholders, improving efficiency, traceability, and decision-making. 
 """
 
 [[extra.top_projects]]
-name = "Craftathon"
-icon = "/assets/images/craftathon.png"
-link = "https://craftathon.org"
-calltoaction = "Visit Website"
-background = "#e91425"
+name = "Automate Workflow"
+icon = "/assets/images/powerautomate.png"
+link = ""
+calltoaction = ""
+background = "#3465c0"
 color = "#fff"
 description = """
-Craftathon was a weekend-long charity event that managed to raise
-$7,599 for Child's Play Charity in two events (2017 and 2018).
-I was mainly involved in creating and testing the donation and ticket system.
-"""
+Power Automate Workflow Development
 
-[[extra.top_projects]]
-name = "Livraria e Papelaria Espaço"
-icon = "/assets/images/lpe.png"
-link = "https://lpespaco.pt"
-calltoaction = "Visit Website"
-background = "#273377"
-color = "#fff"
-description = """
-Livraria e Papelaria Espaço is a local bookstore in my area.
-I've helped build their internet presence by coding a webstore as well as
-providing hosting and email services.  
-Furthermore, I've coded some tools that helped speed labour-intensive tasks in-store.
-"""
+Development of automated workflows using Microsoft Power Automate to streamline business processes, automate approvals, notifications, report distribution, and data synchronization, improving operational efficiency and reducing manual tasks.
 
-[[extra.top_projects]]
-name = "Resumos LEIC"
-icon = "/assets/icons/resumos-leic.svg"
-link = "https://resumos.leic.pt"
-calltoaction = "Visit Website"
-background = "#434343"
-color = "#fff"
-description = """
-A completely open source website, dedicated to the creation of class notes
-focused on the courses in the curriculum of the BSc in Computer Science and
-Engineering at Técnico Lisboa, improving the academic performance of students.
-Currently, it achieves more than 30k monthly views across all pages.
 """
 
 ############
@@ -125,344 +80,82 @@ Currently, it achieves more than 30k monthly views across all pages.
 [[extra.timeline]]
 title = "How it all started..."
 subtitle = ""
-date = "2014"
-icon = "/assets/icons/java.svg"
+date = "2018"
+icon = "/assets/icons/html.svg"
 background = "#007396"
 foreground = "#fff"
 content = """
-At this time, I started to have some interest in coding.
-In May 2014, I joined the [Bukkit](https://bukkit.org/) community,
-started learning Java and created my first Minecraft server.
+Around that time, I started exploring programming more deeply; that was when I created my first `index.html` and said my first "Hello World" to programming.
 """
 
 [[extra.timeline]]
-title = "IslandCraftGames"
+title = "Minecraft Server"
 subtitle = "My first custom made Minecraft server"
-date = "2015 - February 2016"
+date = "2020"
 icon = "/assets/icons/gamepad-variant.svg"
 background = "#36b030"
 foreground = "#fff"
 content = """
-After a few months of work, I've managed to create a Minecraft server
-with custom plugins!
-We also had a website with PayPal support to allow for donations, all custom made.
-The server was closed later that year, so I've decided to
-[open source most of the code](https://bitbucket.org/account/user/islandcraftgames/projects/ICG).
+Created and managed a custom Minecraft server, developing and configuring plugins, automating server tasks, and customizing gameplay. This hands-on project played a key role in developing my programming logic, troubleshooting skills, and practical understanding of software development and system administration.
 """
 
 [[extra.timeline]]
-title = "Clout Team"
-subtitle = "My first experience working as a team"
-date = "July 2016"
+title = "USF - São Francisco University"
+subtitle = "My college journey"
+date = "January 2021"
 icon = "/assets/icons/account-group.svg"
 background = "#fff"
 foreground = "#000"
 content = """
-I joined a development team called Clout Team, which has since been taken down.
-We've worked on various projects, mostly related to Minecraft.  
-While working for Clout Team, I've started receiving money for programming,
-which was a huge achievement for me!
+That was the year I decided to start my journey in Systems Analysis and Development to delve deeper into the IT field.
 """
 
 [[extra.timeline]]
-title = "Triton"
-subtitle = "My first premium Spigot plugin"
-date = "October 2016"
-icon = "/assets/icons/translate.svg"
+title = "Object-Oriented Programming (OOP)"
+subtitle = "My first academic project"
+date = "May 2023"
+icon = "/assets/icons/iconproject2.svg"
 background = "#008ff8"
 foreground = "#fff"
 content = """
-After closing IslandCraftGames, I decided to use some of the code to create
-a really seamless translation plugin and sell it on
-[Spigot](https://www.spigotmc.org/resources/triton.30331/) as MultiLanguagePlugin.
-It has since been rebranded to [Triton](https://triton.rexcantor64.com/).
+Developed academic projects applying Object-Oriented Programming principles, including encapsulation, inheritance, polymorphism, and abstraction. Designed modular and maintainable applications using object-oriented design patterns, strengthening software architecture, problem-solving, and clean coding practices.
 """
 
 [[extra.timeline]]
-title = "SchoolBit"
-subtitle = "My first Android app"
-date = "February 2017"
-icon = "/assets/icons/schoolbit.svg"
+title = "Artemis App"
+subtitle = "Microsoft Power Apps"
+date = "October 2023"
+icon = "/assets/icons/idea.svg"
 background = "#f44336"
 foreground = "#fff"
 content = """
-I started working on an Android app called "SchoolBit" (which was then taken
-down due to legal reasons), that basically connected to my school system and
-showed the absences, summaries, grades, etc...
+Creation of a solution to record incidents identified during factory rounds, focusing on potential vulnerabilities related to **Food Safety** and **Food Defense**. The tool allowed security officers to register improvement opportunities found during inspections, generating individual tickets and automated reports sent to quality managers for monitoring and decision-making.
+
+Project Name Inspiration:
+The application was named Artemis as a reference to the Greek goddess of the hunt. The name represents the app's purpose of "hunting" for improvement opportunities and identifying potential risks during factory inspections, reinforcing the mission of proactively finding vulnerabilities and enhancing food safety standards.
 """
 
 [[extra.timeline]]
-title = "Portugal Live and Invest"
-subtitle = ""
-date = "April 2017"
-icon = "/assets/icons/home.svg"
+title = "EcoSocialHub – Android Application Development"
+subtitle = "My first Android app"
+date = "April 2025"
+icon = "/assets/icons/schoolbit.svg"
 background = "#1b1b1c"
 foreground = "#fff"
 content = """
-I developed a website for my neighbour's company using
-[MaterializeCSS](https://materializecss.com/) for the front-end and
-[PHP](https://php.net/) for the back-end. Unfortunately, it's now offline.
+Designed and developed EcoSocialHub, an academic Android application focused on promoting environmental awareness and encouraging sustainable practices. The app provided a digital platform where users could access environmental content, share initiatives, and engage with topics related to sustainability and community involvement.
+
+Throughout the project, I contributed to the application development process, including interface design, feature implementation, database integration, testing, and debugging, gaining practical experience in mobile application development and software engineering.
 """
 
 [[extra.timeline]]
-title = "Craftathon 2017"
-subtitle = "My first time as a volunteer"
-date = "July 2017"
-icon = "/assets/icons/heart.svg"
-background = "#e91425"
-foreground = "#fff"
-content = """
-After 6 months of work, everything was ready for [Craftathon 2017](https://2017.craftathon.org/)!
-I joined other developers to create an amazing charity event in Minecraft,
-which was able to raise _$6,455.23_ for [Child's Play Charity](https://childsplaycharity.org/),
-improving the lives of children in domestic violence shelters and hospitals!
-I mainly worked on the website back-end, mostly on the payment system.
-"""
-
-[[extra.timeline]]
-title = "JARCraftinator"
-subtitle = "A custom made Minecraft server software"
-date = "August 2017"
-icon = "/assets/icons/java.svg"
-background = "#007396"
-foreground = "#fff"
-content = """
-After Craftathon ended, I didn't have anything to do, so I made myself a challenge:
-create a [fully working Minecraft server software from scratch](https://github.com/Clout-Team/JarCraftinator).  
-**The goal?** Learn more about how socket connections work in Java.
-And after a week I got my first loaded chunk!
-The project is far from finished and it will probably stay that way,
-but it was fun to do nonetheless.
-"""
-
-[[extra.timeline]]
-title = "Portugal Ultra Triathlon"
-subtitle = "Another volunteering work"
-date = "May & June 2018"
-icon = "/assets/icons/put.svg"
-background = "#1b4d7b"
-foreground = "#fff"
-content = """
-I designed a website for [Portugal Ultra Triathlon](https://web.archive.org/web/20191113224253/https://www.portugalultratriathlon.com/),
-an _«Adventure for Charity»_ and a triple ironman triathlon.
-Portugal Ultra Triathlon is a solidary adventure and a triple ironman.
-Its mission is to challenge participants' limits and their resilience,
-generate social value and supporting local communities.  
-I was behind the entire internet presence of the event,
-from the website itself down to the donation system and sysadmin work
-(setting up emails, custom domains, etc).
-"""
-
-[[extra.timeline]]
-title = "Craftathon 2018"
+title = "Form Automation"
 subtitle = ""
-date = "December 2018"
-icon = "/assets/icons/heart.svg"
-background = "#e91425"
+date = "December 2025"
+icon = "/assets/icons/powerautomate.svg"
+background = "#333e9c"
 foreground = "#fff"
 content = """
-During Christmas, I helped with [Craftathon 2018](https://craftathon.org)!
-This time we were able to raise _$1,144_.
-Like in 2017, I mainly worked as a backend developer.
+Creation of automated forms to optimize internal processes, including ticket requests, satisfaction surveys triggered after approval workflows, and visitor management forms with internal leadership approval flows. These solutions improved process standardization, reduced manual tasks, and increased efficiency in tracking and managing requests.
 """
-
-[[extra.timeline]]
-title = "Triton Web Interface"
-subtitle = "My first consumer-facing React app"
-date = "January 2019"
-icon = "/assets/icons/translate.svg"
-background = "#008ff8"
-foreground = "#fff"
-content = """
-In the v1.0.0 update for Triton, my Spigot premium plugin,
-I introduced [TWIN](https://twin.rexcantor64.com/demo),
-a web interface to configure the plugin.
-It was my first consumer-facing web app made with React and other new
-web technologies.
-"""
-
-[[extra.timeline]]
-title = "Battleships"
-subtitle = "An online multiplayer game you can play right now!"
-date = "December 2019"
-icon = "/assets/icons/gamepad-variant.svg"
-background = "#fff"
-foreground = "#000"
-content = """
-In October 2019, I started to develop a small battleships online multiplayer
-game for my school class.
-Two months later, that game is now [available to play](https://battleships.diogotc.com)!
-And it's open source, so feel free to take a look at the
-[source code on GitHub](https://github.com/diogotcorreia/battleship-js).
-"""
-
-[[extra.timeline]]
-title = "Livraria e Papelaria Espaço"
-subtitle = "E-commerce website for a small business"
-date = "April 2020"
-icon = "/assets/icons/storefront.svg"
-background = "#f7ca44"
-foreground = "#000"
-content = """
-I've designed and coded an e-commerce website for
-[Livraria e Papelaria Espaço](https://lpespaco.pt/), a bookstore in my area.
-Almost everything was custom made with [Next.js](https://nextjs.org/) and
-[Strapi](https://strapi.io/).
-Sysadmin work was also done to setup the web and email servers.
-The [source code is available on GitHub](https://github.com/livraria-papelaria-espaco/lpe-website).
-"""
-
-[[extra.timeline]]
-title = "Técnico Lisboa"
-subtitle = "Computer Science Degree"
-date = "October 2020"
-icon = "/assets/icons/tecnico.svg"
-background = "#009de0"
-foreground = "#fff"
-content = """
-I started university at [Instituto Superior Técnico](https://tecnico.ulisboa.pt/en).
-"""
-
-[[extra.timeline]]
-title = "TreeTree2"
-subtitle = "Teaching Python/Web to Students"
-date = "November 2020 - April 2021"
-icon = "/assets/icons/python.svg"
-background = "#3776AB"
-foreground = "#fff"
-content = """
-[TreeTree2](https://treetree2.school/) is a non-profit that helps young
-children up to 12th grade to go beyond school and learn new and interesting topics!
-I've participated in 3 editions of "Informática I", their course that is
-dedicated to teaching Python, as well as 1 edition of "Web I", which teaches
-how the internet works, HTML/CSS and a bit of JavaScript.
-"""
-
-[[extra.timeline]]
-title = "Resumos LEIC"
-subtitle = "Community-driven class notes"
-date = "February 2021"
-icon = "/assets/icons/resumos-leic.svg"
-background = "#434343"
-foreground = "#fff"
-content = """
-During my time at Técnico Lisboa I've created a completely [open source website](https://resumos.leic.pt)
-to aggregate student's class notes of the courses in the curriculum of the BSc in Computer Science and Engineering,
-resulting in a high-quality wiki of multiple computer science subjects.
-Currently, it achieves more than 30k monthly views across all pages and has over 50 contributors.
-"""
-
-[[extra.timeline]]
-title = "DSI @ Técnico"
-subtitle = "Research Initiation Grant"
-date = "April 2021"
-icon = "/assets/icons/tecnico.svg"
-background = "#009de0"
-foreground = "#fff"
-content = """
-I joined [DSI](https://si.tecnico.ulisboa.pt/en/) (Técnico's IT services)
-through a research grant.  
-I was responsible for maintaining some projects directly linked to the university,
-such as [FenixEdu](https://github.com/FenixEdu/fenixedu-academic/commits?author=diogotcorreia).
-"""
-
-[[extra.timeline]]
-title = "Frigu"
-subtitle = "A Rust and Yew.rs (Web Assembly) app"
-date = "April 2022"
-icon = "/assets/icons/rust.svg"
-background = "#dea584"
-foreground = "#000"
-content = """
-This was my first Web Assembly application, made with Yew.rs for the
-frontend and Axum.rs for the backend.
-It was a [simple app to track purchases on a community fridge](https://github.com/diogotcorreia/frigu),
-keeping transaction history and balance of users, and
-was used for a while by ~10 people.
-"""
-
-[[extra.timeline]]
-title = "KTH"
-subtitle = "MSc Cybersecurity"
-date = "August 2023"
-icon = "/assets/icons/kth.svg"
-background = "#004791"
-foreground = "#fff"
-content = """
-I started a Cybersecurity Master programme at [KTH Royal Institute of Technology](https://kth.se/en)
-in Sweden 🇸🇪.
-"""
-
-[[extra.timeline]]
-title = "IST Delegate Election"
-subtitle = "Election app for Técnico's Pedagogical Council"
-date = "October 2023"
-icon = "/assets/icons/tecnico.svg"
-background = "#009de0"
-foreground = "#fff"
-content = """
-Since I was member of the Pedagogical Council in my last year at Técnico,
-I volunteered to re-build the delegate (student representative)
-[election platform](https://github.com/diogotcorreia/ist-delegate-election)
-using more modern technologies. It was built using Rust and React,
-which should result in a longer life span and need fewer maintenance.
-"""
-
-[[extra.timeline]]
-title = "Research Assistant"
-subtitle = "LangSec Group @ KTH"
-date = "September 2024"
-icon = "/assets/icons/kth.svg"
-background = "#004791"
-foreground = "#fff"
-content = """
-I worked as a research assistant at the LangSec group at KTH, where I
-investigated the impact and prevalence of client-side prototype pollution
-in JavaScript in various websites.
-As part of this work, I developed a [Chromium fork](https://github.com/diogotcorreia/ghunter4chrome)
-to detect prototype pollution gadgets when a vulnerable website is visited.
-"""
-
-[[extra.timeline]]
-title = "ECSC 2024"
-subtitle = "In-Person CTF Competition"
-date = "October 2024"
-icon = "/assets/icons/flag.svg"
-background = "#0086cd"
-foreground = "#fff"
-content = """
-In 2024 I qualified for the first time to represent Portugal in the
-[European Cybersecurity Challenge](https://ecsc.eu/)
-in Torino, Italy.
-"""
-
-[[extra.timeline]]
-title = "ECSC 2025"
-subtitle = "In-Person CTF Competition"
-date = "October 2025"
-icon = "/assets/icons/flag.svg"
-background = "#0086cd"
-foreground = "#fff"
-content = """
-In 2025 I qualified again to represent Portugal in the
-[European Cybersecurity Challenge](https://ecsc.eu/),
-this time in Warsaw, Poland.
-"""
-
-[[extra.timeline]]
-title = "Master's Thesis"
-subtitle = "Classa: Uncovering Class Pollution in Python"
-date = "October 2025"
-icon = "/assets/icons/kth.svg"
-background = "#004791"
-foreground = "#fff"
-content = """
-For my [Master's Thesis](https://s.diogotc.com/thesis-pdf)
-I have built a static analysis tool
-that can detect Class Pollution in Python programs and libraries.
-This tool was then run on 3000 real-world python projects,
-resulting in the discovery of the critical-severity vulnerability
-[CVE-2025-58367](https://github.com/advisories/GHSA-mw26-5g2v-hqw3).
-"""
-
 +++
