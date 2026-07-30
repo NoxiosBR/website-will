@@ -1,8 +1,8 @@
-# Diogo Correia's Personal Website
+# Willian Nunes Personal Website
 
-![Website Screenshot](https://github.com/diogotcorreia/dtc-website/blob/master/.gh/site_screenshot.png?raw=true)
+![Website Screenshot](./.gh/site_screenshot.png)
 
-You can find a live version at [diogotc.com](https://diogotc.com).
+You can find a live version at [willnunes.com](https://willnunes.com).
 
 ## Frameworks and packages used
 
