@@ -82,7 +82,7 @@ name = "Impossible List"
 path = "/impossiblelist"
 [[extra.links]]
 name = "CV"
-path = "https://cv.diogotc.com"
+path = "https://cv.willnunes.com"
 
 [extra.authors."Willian Nunes"]
 fediverse = ""
