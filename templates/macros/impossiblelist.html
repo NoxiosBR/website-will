@@ -20,7 +20,11 @@
   {{ macros_impossiblelist::format_link(log=goal) }}
   {%- elif goal.time_log %}
   {%- set best_time = goal.time_log | sort(attribute="value") | first %}
+  {%- if "Cycling" in goal.name or "bike" in goal.name %}
+  — Best elevation: <strong>{{ best_time.value }}m</strong>
+  {%- else %}
   — Best time: <strong>{{ macros_impossiblelist::format_duration(duration=best_time.value) }}</strong>
+  {%- endif %}
   on {{ best_time.date | date(format="%-d %B %Y") }}
   {{ macros_impossiblelist::format_link(log=best_time) }}
   {%- endif %}
