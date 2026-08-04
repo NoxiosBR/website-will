@@ -82,7 +82,7 @@ name = "Impossible List"
 path = "/impossiblelist"
 [[extra.links]]
 name = "CV"
-path = "https://cv.willnunes.com"
+path = "https://cvwillnunes.netlify.app/"
 
 [extra.authors."Willian Nunes"]
 fediverse = ""

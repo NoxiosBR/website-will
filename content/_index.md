@@ -2,7 +2,7 @@
 [extra]
 profile_picture = "/assets/images/profile.jpg"
 name = "Willian Nunes"
-subtitle = "Software Enginner and Player"
+subtitle = "Software Enginner"
 about_me = """
 **Hey!**
  
