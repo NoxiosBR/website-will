@@ -44,7 +44,7 @@ external_links_no_follow = true
 external_links_no_referrer = true
 
 # Whether smart punctuation is enabled (changing quotes, dashes, dots in their typographic form)
-# For example, `...` into `…`, `"quote"` into `“curly”` etc
+# For example, `...` into `…`, `"quote"` into `"curly"` etc
 smart_punctuation = true
 
 [markdown.highlighting]
@@ -55,7 +55,7 @@ long_title = "Willian Nunes"
 favicon = "/assets/images/profile.jpg"
 
 [extra.footer]
-source_code = "https://github.com/NoxiosBR/dtc-website-will"
+source_code = "https://github.com/NoxiosBR/website-will"
 
 [[extra.footer.socials]]
 name = "mail"
@@ -72,7 +72,6 @@ name = "instagram"
 label = "Instagram"
 value = "will_idm"
 link = "https://www.instagram.com/will_idm/?hl=pt-br"
-
 
 [[extra.links]]
 name = "Home"
