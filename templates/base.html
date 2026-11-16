@@ -1,10 +1,24 @@
 {%- import 'macros/seo.html' as macros_seo %}
 {%- import 'macros/navbar.html' as macros_navbar %}
+{#- idioma alternativo e URL da mesma pagina nesse idioma (usado pelo botao de idioma) #}
+{%- if lang == "pt" %}{% set other_lang = "en" %}{% else %}{% set other_lang = "pt" %}{% endif %}
+{%- if lang == config.default_language %}{% set lang_prefix = "" %}{% else %}{% set lang_prefix = "/" ~ lang %}{% endif %}
+{%- if other_lang == config.default_language %}
+{%- set switch_url = get_url(path="/") %}
+{%- else %}
+{%- set switch_url = get_url(path="/" ~ other_lang ~ "/") %}
+{%- endif %}
+{%- if section and section.translations %}
+{%- for t in section.translations %}{% if t.lang == other_lang %}{% set_global switch_url = t.permalink %}{% endif %}{% endfor %}
+{%- elif page and page.translations %}
+{%- for t in page.translations %}{% if t.lang == other_lang %}{% set_global switch_url = t.permalink %}{% endif %}{% endfor %}
+{%- endif %}
 <!DOCTYPE html>
 <html lang="{{lang}}">
   <head>
     {%- block head %}
     {%- include "partials/head.html" %}
+    <link rel="alternate" hreflang="{{ other_lang }}" href="{{ switch_url | safe }}" />
     {%- block stylesheets %}
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Nunito&amp;display=swap" rel="stylesheet" crossorigin="anonymous" />
     <link rel="stylesheet" href="{{ get_url(path='/common.css', trailing_slash=false, cachebust=true) }}" />
@@ -13,7 +27,7 @@
   </head>
   <body>
     <header>
-      {{- macros_navbar::navbar_dom() }}
+      {{- macros_navbar::navbar_dom(lang=lang, other_lang=other_lang, lang_prefix=lang_prefix, switch_url=switch_url) }}
     </header>
     <main id="top">
       {%- block content %}
@@ -22,7 +36,7 @@
     <footer>
       <div class="container footer-sections">
         <div class="footer-section">
-          <h2>Contact me</h2>
+          <h2>{{ trans(key="contact_me", lang=lang) }}</h2>
           <ul>
             {% for social in config.extra.footer.socials %}
               <li>
@@ -40,15 +54,15 @@
           </ul>
         </div>
         <div class="footer-section">
-          <h2>Site map</h2>
+          <h2>{{ trans(key="site_map", lang=lang) }}</h2>
           <ul>
             {%- for link in config.extra.links %}
             {%- if link.path is matching("^http[s]?://") %}
             {%- set href = link.path %}
             {%- else %}
-            {%- set href = get_url(path=link.path) %}
+            {%- set href = get_url(path=lang_prefix ~ link.path) %}
             {%- endif %}
-            <li><a href="{{ href }}">{{ link.name }}</a></li>
+            <li><a href="{{ href }}">{{ trans(key=link.key, lang=lang) }}</a></li>
             {%- endfor %}
           </ul>
         </div>
@@ -63,7 +77,7 @@
               rel="noopener"
               data-umami-event="source-code-footer"
             >
-              Website Source Code
+              {{ trans(key="source_code", lang=lang) }}
             </a>
           </p>
         </div>

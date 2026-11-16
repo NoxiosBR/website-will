@@ -28,29 +28,44 @@
 </script>
 {%- endmacro %}
 
-{%- macro navbar_dom() %}
+{%- macro lang_switch(lang, other_lang, switch_url) %}
+<a
+  class="button--big lang-switch"
+  href="{{ switch_url | safe }}"
+  hreflang="{{ other_lang }}"
+  lang="{{ other_lang }}"
+  title="{{ trans(key='lang_switch_label', lang=lang) }}"
+  aria-label="{{ trans(key='lang_switch_label', lang=lang) }}"
+>
+  {{ load_data(path="/assets/icons/translate.svg") | safe }}
+  <span>{{ trans(key="lang_switch_short", lang=lang) }}</span>
+</a>
+{%- endmacro %}
+
+{%- macro navbar_dom(lang, other_lang, lang_prefix, switch_url) %}
 <nav>
   <div>
-    <button id="drawer-open" class="icon-button" aria-label="Open Navigation Drawer">
+    <button id="drawer-open" class="icon-button" aria-label="{{ trans(key='open_drawer', lang=lang) }}">
       {{ load_data(path="/assets/icons/hamburger-menu.svg") | safe }}
     </button>
-    <h1><a href="{{ get_url(path='/#top') }}">{{ config.title }}</a></h1>
+    <h1><a href="{{ get_url(path=lang_prefix ~ '/#top') }}">{{ config.title }}</a></h1>
   </div>
   <div>
+    {{- macros_navbar::lang_switch(lang=lang, other_lang=other_lang, switch_url=switch_url) }}
     {%- for link in config.extra.links %}
     {%- if link.path is matching("^http[s]?://") %}
     {%- set href = link.path %}
     {%- else %}
-    {%- set href = get_url(path=link.path) %}
+    {%- set href = get_url(path=lang_prefix ~ link.path) %}
     {%- endif %}
     <a class="button--big" href="{{ href }}">
-      {{ link.name }}
+      {{ trans(key=link.key, lang=lang) }}
     </a>
     {%- endfor %}
   </div>
 </nav>
 <dialog id="navbar-drawer">
-  <button id="drawer-close" class="icon-button" aria-label="Close Navigation Drawer">
+  <button id="drawer-close" class="icon-button" aria-label="{{ trans(key='close_drawer', lang=lang) }}">
     {{ load_data(path="/assets/icons/close.svg") | safe }}
   </button>
   <div class="navbar-drawer-links">
@@ -58,14 +73,14 @@
     {%- if link.path is matching("^http[s]?://") %}
     {%- set href = link.path %}
     {%- else %}
-    {%- set href = get_url(path=link.path) %}
+    {%- set href = get_url(path=lang_prefix ~ link.path) %}
     {%- endif %}
     <a class="button--big" href="{{ href }}">
-      {{ link.name }}
+      {{ trans(key=link.key, lang=lang) }}
     </a>
     {%- endfor %}
+    {{- macros_navbar::lang_switch(lang=lang, other_lang=other_lang, switch_url=switch_url) }}
   </div>
 </dialog>
 <div id="navbar-trigger" style="position: absolute; width: 1px; height: 1px; top: 100px; left: 0;"></div>
 {%- endmacro %}
-
