@@ -79,10 +79,10 @@
 {%- else %}
 {%- set label = "View website" %}
 {%- endif %}
-— <a href="{{ log.link }}" target="_blank" rel="noopener noreferer">{{ label }}</a>
+— <a href="{{ log.link }}" target="_blank" rel="noopener noreferrer">{{ label }}</a>
 {%- elif log.triathlon_links %}
-— <a href="{{ log.triathlon_links[0] }}" target="_blank" rel="noopener noreferer">Swimming Segment</a> |
-<a href="{{ log.triathlon_links[1] }}" target="_blank" rel="noopener noreferer">Cycling Segment</a> |
-<a href="{{ log.triathlon_links[2] }}" target="_blank" rel="noopener noreferer">Running Segment</a>
+— <a href="{{ log.triathlon_links[0] }}" target="_blank" rel="noopener noreferrer">Swimming Segment</a> |
+<a href="{{ log.triathlon_links[1] }}" target="_blank" rel="noopener noreferrer">Cycling Segment</a> |
+<a href="{{ log.triathlon_links[2] }}" target="_blank" rel="noopener noreferrer">Running Segment</a>
 {%- endif %}
 {%- endmacro %}

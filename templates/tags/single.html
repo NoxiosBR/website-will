@@ -2,7 +2,7 @@
 
 {%- block head %}
 {{ super() }}
-{{- macros_seo::seo(config=config, title="#" ~ term.name, description="{{ term.page_count }} posts available in #{{ term.name }}") }}
+{{- macros_seo::seo(config=config, title="#" ~ term.name, description=term.page_count ~ " posts available in #" ~ term.name) }}
 {% if taxonomy.feed %}
   {%- for feed in config.feed_filenames -%}
     {%- if feed is containing('atom') -%}

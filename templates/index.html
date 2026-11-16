@@ -57,7 +57,7 @@
         <div class="card" style="background-color: {{ top_project.background }}; color: {{ top_project.color }};">
           <div class="card-content">
             {%- if top_project.icon is matching("\.svg$") %}
-            <img src="{{ top_project.icon }}" alt="{{ top_project.name }}"/>
+            <img src="{{ get_url(path=top_project.icon) }}" alt="{{ top_project.name }}"/>
             {%- else %}
             {% set project_img = resize_image(path=top_project.icon, width=110, height=110, op="fill", format="webp") %}
             <img src="{{ project_img.url }}" alt="{{ top_project.name }}"/>
@@ -67,11 +67,13 @@
               {{ top_project.description | striptags | markdown(inline=false) | safe }}
             </div>
           </div>
+          {%- if top_project.link and top_project.calltoaction %}
           <div class="card-actions">
             <a href="{{ top_project.link }}" target="_blank" rel="noopener" class="button">
               {{ top_project.calltoaction }}
             </a>
           </div>
+          {%- endif %}
         </div>
       {% endfor %}
     </div>
