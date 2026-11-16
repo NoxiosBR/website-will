@@ -12,7 +12,7 @@ default_language = "en"
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
 
 # The default author for pages
 author = "Willian Nunes"
@@ -61,7 +61,7 @@ source_code = "https://github.com/NoxiosBR/website-will"
 name = "mail"
 label = "E-mail"
 value = "willian.silva166@hotmail.com"
-link = "willian.silva166@hotmail.com"
+link = "mailto:willian.silva166@hotmail.com"
 [[extra.footer.socials]]
 name = "discord"
 label = "Discord"

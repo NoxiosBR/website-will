@@ -44,6 +44,9 @@
     {%- endif %}
   </article>
   {%- endfor %}
+  {%- if not paginator.pages %}
+  <p>No posts yet.</p>
+  {%- endif %}
   <nav class="paginator">
     <p>
       {% if paginator.previous %}
