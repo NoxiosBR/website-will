@@ -18,15 +18,15 @@
 
 {{- macros_particles::particles_dom(style="position: fixed; inset: 0; z-index: -10;") }}
 <div class="splash">
-  <h1>Impossible List</h1>
-  <h2>by {{ page.authors[0] | default(value=config.author) }}</h2>
+  <h1>{{ page.title }}</h1>
+  <h2>{{ trans(key="il_by", lang=lang) }} {{ page.authors[0] | default(value=config.author) }}</h2>
 </div>
 
 <div class="section">
   <div class="container">
     {{ page.content | safe }}
     {%- for category in page.extra.categories %}
-    {{ macros_impossiblelist::category(category=category) }}
+    {{ macros_impossiblelist::category(category=category, lang=lang) }}
     {%- endfor %}
   </div>
 </div>

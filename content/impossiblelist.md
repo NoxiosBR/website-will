@@ -58,6 +58,7 @@ name = "Health/Sports Goals"
 
   [[extra.categories.goals]]
   name = "Cycling to another city | 50 km bike ride"
+  metric = "elevation"
 
     [[extra.categories.goals.time_log]]
     date = "2021-04-11"

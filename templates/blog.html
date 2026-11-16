@@ -24,37 +24,37 @@
 {%- set page_data = section.extra %}
 
 <div class="container post-list">
-  <h1>Posts</h1>
+  <h1>{{ trans(key="blog_posts", lang=lang) }}</h1>
   {%- for page in paginator.pages %}
   <article>
     <header>
       <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
-      <span>{{ page.date | date(format="%F") }} &middot; {{ page.reading_time }} minute read</span>
+      <span>{{ page.date | date(format="%F") }} &middot; {{ page.reading_time }} {{ trans(key="blog_minute_read", lang=lang) }}</span>
     </header>
     {%- if page.summary %}
     <div>
       {{ page.summary | safe }}
-      <nav><a href={{ page.permalink | safe }}>Read more&nbsp;&raquo;</a></nav>
+      <nav><a href={{ page.permalink | safe }}>{{ trans(key="blog_read_more", lang=lang) }}&nbsp;&raquo;</a></nav>
     </div>
     {%- elif page.description %}
     <div>
       {{ page.description | striptags | markdown(inline=true) | safe }}
-      <nav><a href={{ page.permalink | safe }}>Read more&nbsp;&raquo;</a></nav>
+      <nav><a href={{ page.permalink | safe }}>{{ trans(key="blog_read_more", lang=lang) }}&nbsp;&raquo;</a></nav>
     </div>
     {%- endif %}
   </article>
   {%- endfor %}
   {%- if not paginator.pages %}
-  <p>No posts yet.</p>
+  <p>{{ trans(key="blog_no_posts", lang=lang) }}</p>
   {%- endif %}
   <nav class="paginator">
     <p>
       {% if paginator.previous %}
-        <a href="{{ paginator.previous }}">&laquo; Previous</a> |
+        <a href="{{ paginator.previous }}">&laquo; {{ trans(key="blog_previous", lang=lang) }}</a> |
       {% endif %}
-      <span>Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
+      <span>{{ trans(key="blog_page", lang=lang) }} {{ paginator.current_index }} {{ trans(key="blog_of", lang=lang) }} {{ paginator.number_pagers }}</span>
       {% if paginator.next %}
-        | <a href="{{ paginator.next }}">Next &raquo;</a>
+        | <a href="{{ paginator.next }}">{{ trans(key="blog_next", lang=lang) }} &raquo;</a>
       {% endif %}
     </p>
   </nav>

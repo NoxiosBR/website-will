@@ -220,3 +220,20 @@ footer {
     }
   }
 }
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  vertical-align: middle;
+
+  svg {
+    fill: currentColor;
+    width: 1.25em;
+    height: 1.25em;
+  }
+}
+
+#navbar-drawer .lang-switch {
+  align-self: flex-start;
+}
